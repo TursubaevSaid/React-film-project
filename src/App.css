@@ -36,3 +36,151 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: calc(100vw - 40px);
+  justify-content: center;
+  grid-gap: 20px;
+  width: 1100px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 56px - 56px);
+}
+.card-img {
+  width: 100%;
+  height: 380px;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.singleCard {
+  display: flex;
+  margin-top: 30px;
+  border: 5px solid darkorange;
+}
+.SingleCard-image {
+  margin-right: 30px;
+  width: 600px;
+}
+
+.reviews {
+  color: white;
+}
+.cast {
+  color: white;
+}
+.cast-reviews {
+  display: flex;
+}
+.castList {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-auto-rows: minmax(auto, auto);
+  justify-content: center;
+  grid-gap: 20px;
+
+  padding: 40px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  height: 500px;
+  border: 3px solid darkorange;
+  overflow-y: scroll;
+}
+/* .castWrapper {
+  border: 1px solid red;
+  padding: 20px 10px;
+} */
+.castImg {
+  width: 100%;
+  height: 340px;
+}
+.CastItem {
+  margin-right: 30px;
+  border: 3px solid darkorange;
+  text-align: center;
+}
+.CastItem__title {
+  font-size: 1.5rem;
+  margin: 0.8rem 0 1.68rem 0;
+}
+.card_img {
+  height: 430px;
+}
+#root {
+  background-color: black;
+}
+.card {
+  background: black;
+}
+.card-title {
+  color: darkorange;
+}
+p {
+  color: darkorange;
+}
+h1 {
+  color: white;
+}
+.NavbarList {
+  background-color: darkorange;
+}
+.page_footer {
+  background-color: darkorange;
+}
+.btn {
+  background: darkorange;
+}
+h4 {
+  color: navajowhite;
+}
+.reviewsList {
+  height: 500px;
+  border: 3px solid darkorange;
+  overflow-y: scroll;
+}
+.reviewsItem {
+  margin-left: 40px;
+}
+.action {
+  margin-top: 50px;
+}
+a {
+  color: black;
+  font-weight: bold;
+}
+.grey-text {
+  color: black;
+  font-weight: bold;
+}
+h5 {
+  font-weight: bold;
+}
+.card {
+  border: 3px solid darkorange;
+}
+.updated {
+  color: darkgray;
+}
+.home-movie {
+  color: black;
+}
+.validate {
+  color: white;
+}
+.searchbar {
+  border: 2px solid darkorange;
+}
+.Search {
+  margin-top: 30px;
+}
+.file-field {
+  margin-left: 30px;
+}

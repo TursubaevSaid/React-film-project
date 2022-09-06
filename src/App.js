@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./client/component/navbar";
+import HomePage from "./client/Pages/HomePage";
+import MoviePage from "./client/Pages/MoviePage";
+import SingleMoviePage from "./client/Pages/SingleMoviePage";
+import Footer from "./client/component/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/movie" element={<MoviePage />} />
+          <Route path="/movie/:id/*" element={<SingleMoviePage />} />
+        </Routes>
+
+        <Footer />
+      </>
+    );
+  }
 }
 
-export default App;
+// function App() {
+//   return (
+//     <>
+//       <Navbar />
+//       <Routes>
+//         <Route exact path="/" element={<HomePage />} />
+//         <Route path="/movie" element={<MoviePage />} />
+//         <Route path="/singlePage" element={<SingleMoviePage />} />
+//       </Routes>
+//     </>
+//   );
+// }
+
+// export default App;
