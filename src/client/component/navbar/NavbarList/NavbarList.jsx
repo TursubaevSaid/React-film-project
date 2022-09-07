@@ -11,7 +11,10 @@ export default function NavbarList() {
         <ul id="nav-mobile" className="left hide-on-med-and-down">
           {navbarElems}
           <li>
-            <a href="#" className="brand-logo right">
+            <a
+              href="https://github.com/TursubaevSaid/React-film-project"
+              className="brand-logo right"
+            >
               Repo
             </a>
           </li>
