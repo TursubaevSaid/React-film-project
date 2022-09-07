@@ -18,7 +18,20 @@ export default function MoviePage() {
         const data = await response.data;
         setMovies([...movies, ...data.results]);
       });
-  }, [query, page]);
+  }, [page]);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.themoviedb.org/3/search/movie?api_key=826ff55be219075fe0c51d998b696b2f&page=${page}&language=en-US&page=1&include_adult=false&query=${query}`
+      )
+      .then(async (response) => {
+        console.log(response);
+        const data = await response.data;
+        setMovies(data.results);
+      });
+  }, [query]);
+
   const handleChange = (e) => {
     setQuery(e.currentTarget.value);
   };
